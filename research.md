@@ -17,7 +17,7 @@ permalink: /research/
     </div>
     
     <p class="project-description">
-        My research focuses on developing robotic systems that can learn adaptively while guaranteeing safety, especially in environments shared with humans. I combine Reinforcement Learning (RL) with optimization-based control methods—such as Control Barrier Functions (CBF-QP) and Model Predictive Control (MPC)—to enable robots to learn complex behaviours while strictly respecting physical, safety, and operational constraints.
+        My research focuses on developing robotic systems that can learn adaptively while guaranteeing safety, especially in environments shared with humans—a central challenge in Human–Robot Interaction (HRI). I combine Reinforcement Learning (RL) with optimization-based control methods—such as Control Barrier Functions (CBF-QP) and Model Predictive Control (MPC)—to enable robots to learn complex behaviours while strictly respecting physical, safety, and operational constraints.
     </p>
 
     <div class="project-features">
@@ -55,7 +55,7 @@ permalink: /research/
 
     <div class="project-features">
         <h4>1. Safe Reinforcement Learning Algorithms</h4>
-        <p>Developing reinforcement learning methods that can learn high-performance behaviours while provably avoiding unsafe actions. My work explores constrained RL, dual-variable stability, and probabilistic safety guarantees to ensure learning remains safe even in unpredictable human-centered environments.</p>
+        <p>Developing reinforcement learning methods that can learn high-performance behaviours while provably avoiding unsafe actions. My work explores constrained RL, dual-variable stability, and probabilistic safety guarantees to ensure learning remains safe even in unpredictable human-centered environments, particularly during close-proximity human–robot collaboration.</p>
         <p><strong>Key Question:</strong> How can RL agents learn and adapt efficiently while guaranteeing safety throughout training and deployment?</p>
     </div>
 
@@ -80,6 +80,8 @@ permalink: /research/
             <li>Assistive robots that maintain safe distances while adapting to human motion</li>
             <li>Collaborative robots (cobots) that predict human intent and coordinate actions</li>
             <li>Robots that enforce physical and interaction constraints in real time</li>
+            <li>Shared-control frameworks for joint human–robot manipulation</li>
+            <li>Real-time safety during physical human–robot interaction (pHRI)</li>
         </ul>
 
         <p><strong>Autonomous Systems & Mobility</strong></p>
@@ -141,7 +143,7 @@ permalink: /research/
             <li>Human-centered control frameworks that anticipate and respect human behaviour,</li>
             <li>and robust sim-to-real pipelines that enable safe deployment.</li>
         </ul>
-        <p>Through this work, I aim to advance a future where robots can learn, adapt, and collaborate safely—creating autonomous systems that are not only intelligent, but also aligned with human needs, values, and safety requirements.</p>
+        <p>Through this work, I aim to advance a future where robots can learn, adapt, and collaborate safely—creating autonomous systems that are not only intelligent but also aligned with human needs, values, and safety requirements.</p>
     </div>
 </div>
 

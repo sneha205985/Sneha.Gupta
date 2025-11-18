@@ -8,15 +8,17 @@ title: Sneha Gupta
     <header class="landing-header">
         <h1>Sneha Gupta</h1>
         <p class="header-subtitle">PhD Applicant in Computer Science</p>
-        <p class="header-focus">Reinforcement Learning & Optimization for Human-Centric Autonomous Systems</p>
+        <p class="header-focus">Reinforcement Learning & Optimization for Human–Robot Interaction</p>
     </header>
 
    <!-- About Me Section -->
 <section class="about-section">
     <div class="about-content">
-        <p>I am advancing the frontier of intelligent robotic systems through <strong>Reinforcement Learning (RL) and Optimization-based control</strong>, developing algorithms that enable robots to learn adaptively while preserving safety, stability, and predictable behaviour—especially in human-centred environments. My research lies at the intersection of Robotics, Safe RL, and Control Optimization, where I build shared-control frameworks, safety-constrained learning methods, and performance-guaranteed decision systems. My recent work includes a unified safe RL benchmark for human–robot shared control, integrating CBF/QP shielding, constrained-policy optimisation, and multi-robot evaluation tasks, alongside emerging efforts in optimisation-driven RL with formal safety guarantees.</p>
+        <p>I am advancing the next generation of intelligent, human-centric robotic systems through <strong>Reinforcement Learning (RL) and Optimization-based control</strong>, focusing on enabling robots to learn adaptively while maintaining safety, stability, and predictable behaviour during interaction with humans. My work lies at the intersection of Human–Robot Interaction (HRI), Safe RL, and Control Optimization, where I design algorithms and shared-control frameworks that support reliable and interpretable robot behaviour in dynamic, real-world environments.</p>
         
-        <p>My background in Information Technology engineering, combined with hands-on roles in research, AI development, and data analysis, gives me a strong foundation for PhD-level research that is both rigorous and practically deployable. I am seeking PhD positions in Computer Science (Robotics) starting Fall 2026, where I aim to advance safe, efficient, and interpretable robot-learning systems capable of collaborating with humans in real-world environments.</p>
+        <p>My recent work involves building a unified safe RL benchmark for human–robot shared control, integrating CBF/QP-based shielding, constrained-policy optimisation, and performance-guaranteed decision-making. I am particularly interested in how optimisation-driven RL can contribute to trustworthy collaboration between humans and autonomous systems, enabling robots to balance exploration, safety, and task efficiency during close-proximity interaction.</p>
+        
+        <p>My background in Information Technology engineering, combined with hands-on experience in AI development, data analysis, and applied research, has shaped a strong foundation for PhD-level research in robotics and learning-based control. I aim to advance scalable, interpretable, and safety-aware robot-learning systems that can collaborate with humans across shared-workspace, assistive, and multi-robot settings. I am seeking PhD opportunities in Computer Science (Robotics) for Fall 2026.</p>
     </div>
 
         <!-- Research Interests Only -->
@@ -24,10 +26,9 @@ title: Sneha Gupta
             <h3>Research Interests</h3>
             <div class="interests-grid">
                 <span class="interest-tag">Safe Reinforcement Learning</span>
+                <span class="interest-tag">Human–Robot Interaction (HRI)</span>
                 <span class="interest-tag">Optimization-Based Control</span>
-                <span class="interest-tag">Human–Robot Interaction & Shared-Control Robotics</span>
-                <span class="interest-tag">Robot Learning & Adaptive Control</span>
-                <span class="interest-tag">Trustworthy & Interpretable Autonomous Systems</span>
+                <span class="interest-tag">Shared Autonomy & Intent Prediction</span>
             </div>
         </div>
     </section>
