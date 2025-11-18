@@ -1,0 +1,350 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+# Projects
+
+# Research Implementation
+
+Published research projects with full codebase availability. Each implementation demonstrates novel methodologies in safe reinforcement learning, human-robot interaction, and optimization-based control systems.
+
+## Featured Projects
+
+<div class="project featured">
+    <div class="project-header">
+        <h3>Safe Reinforcement Learning for Human–Robot Shared Control</h3>
+        <span class="project-status">Research Implementation</span>
+    </div>
+    <div class="project-meta">
+        <span class="project-tech">Python • PyTorch • Safe RL (CPO, PPO-Lagrangian, SAC-Lagrangian) • Shared-Control Robotics</span>
+        <span class="project-date">2024</span>
+    </div>
+    <p class="project-description">
+        A comprehensive benchmarking framework for Safe Reinforcement Learning in human–robot shared control. The project systematically evaluates advanced Safe RL algorithms and classical control baselines across diverse robot platforms, human behaviour models, and safety constraints, producing publication-ready results for robotics and RL venues.
+    </p>
+    <div class="project-features">
+        <h4>Research Contributions:</h4>
+        <ul>
+            <li>End-to-end benchmarking pipeline for state-of-the-art Safe RL and classical control methods in shared-control tasks.</li>
+            <li>Rich suite of performance, safety, and human-centric metrics (success, constraint violations, trust, workload, etc.).</li>
+            <li>Built-in statistical analysis with hypothesis tests, effect sizes, bootstrap confidence intervals, and power analysis.</li>
+            <li>Cross-domain evaluation across manipulators, mobile bases, humanoids, and collaborative assembly scenarios.</li>
+            <li>Ablation-study tools for understanding algorithm components, failure modes, and generalisation behaviour.</li>
+        </ul>
+    </div>
+    <div class="project-results">
+        <h4>Technical Implementation:</h4>
+        <ul>
+            <li>Structured src/ layout with baselines, evaluation, analysis, utils, and experiments modules.</li>
+            <li>Implementations of multiple Safe RL algorithms (SAC-Lagrangian, TD3-Constrained, PPO-Lagrangian, CPO variants) plus MPC, LQR, PID, impedance, and admittance controllers.</li>
+            <li>EvaluationSuite and experiment runners that orchestrate large-scale experiments with multiple seeds and environments.</li>
+            <li>Automatic generation of publication materials: comparison plots, safety heatmaps, LaTeX tables, and reports.</li>
+            <li>Reproducibility management with deterministic seeds, system logging, profiling, and experiment tracking utilities.</li>
+        </ul>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/sneha205985/Safe_Reinforcement_Learning_for_Human_Robot_Shared_Control" class="project-link">View Code</a>
+        <a href="https://github.com/sneha205985/Safe_Reinforcement_Learning_for_Human_Robot_Shared_Control/blob/main/README.md" class="project-link">Documentation</a>
+        <a href="https://www.techrxiv.org/users/993341/articles/1354958-safe-reinforcement-learning-for-human-robot-shared-control" class="project-link">Research Paper</a>
+    </div>
+</div>
+
+<div class="project featured">
+    <div class="project-header">
+        <h3>Model-Based RL for Predictive Human Intent Recognition</h3>
+        <span class="project-status">Project Ready</span>
+    </div>
+    <div class="project-meta">
+        <span class="project-tech">Python • Model Predictive Control (MPC) • Bayesian Reinforcement Learning • Human–Robot Interaction</span>
+        <span class="project-date">2024</span>
+    </div>
+    <p class="project-description">
+        A research framework that models human behaviour and infers intent to enable anticipatory human–robot collaboration. The system combines model-based prediction of human motion with Bayesian RL and MPC, allowing a robot to plan safe, cooperative actions under uncertainty about human goals and future trajectories.
+    </p>
+    <div class="project-features">
+        <h4>Research Contributions:</h4>
+        <ul>
+            <li>Unified architecture for behaviour modelling, intent prediction, control, and learning in human–robot interaction.</li>
+            <li>Abstract interfaces for human behaviour models and intent predictors, enabling plug-and-play comparison of different algorithms.</li>
+            <li>Uncertainty-aware decision making via Bayesian RL, supporting safer exploration around humans.</li>
+            <li>MPC formulation that integrates human motion and intent forecasts into the robot's optimisation problem.</li>
+            <li>Clear separation between human state representation, prediction, and robot control for reusable, extensible research code.</li>
+        </ul>
+    </div>
+    <div class="project-results">
+        <h4>Technical Implementation:</h4>
+        <ul>
+            <li>Modular Python package with models/, controllers/, agents/, utils/, and visualization/ subsystems.</li>
+            <li>Type-hinted, test-driven codebase with unit, integration, and fixture-based tests using pytest.</li>
+            <li>Configurable MPC horizon, safety margins, and workspace bounds via .env and config files.</li>
+            <li>Logging, experiment management, and trajectory visualisation tools for analysing controller behaviour.</li>
+            <li>Automated style, lint, and type checks using Black, Flake8, and MyPy for research-grade software quality.</li>
+        </ul>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/sneha205985/Model_Based_RL_for_Predictive_Human_Intent_Recognition" class="project-link">View Code</a>
+        <a href="https://github.com/sneha205985/Model_Based_RL_for_Predictive_Human_Intent_Recognition/blob/main/README.md" class="project-link">Documentation</a>
+    </div>
+</div>
+
+<div class="project featured">
+    <div class="project-header">
+        <h3>HealthBot Chat Assistant</h3>
+        <span class="project-status">Production Ready</span>
+    </div>
+    <div class="project-meta">
+        <span class="project-tech">Python • Streamlit • Google Gemini API • Responsible AI • Health Information Chatbot</span>
+        <span class="project-date">2024</span>
+    </div>
+    <p class="project-description">
+        An AI-powered health information assistant that guides users through symptom descriptions and follow-up questions while enforcing strict non-diagnostic boundaries. The system structures responses into possible conditions, causes, lifestyle advice, and doctor-visit guidance, with built-in safety disclaimers and conversation memory.
+    </p>
+    <div class="project-features">
+        <h4>Research Contributions:</h4>
+        <ul>
+            <li>Design of a non-diagnostic conversational health assistant focused on clarity and safety rather than medical decision-making.</li>
+            <li>Prompt and response structure that consistently surfaces symptoms, causes, remedies, prevention, and consultation advice.</li>
+            <li>Explicit safety guardrails through mandatory disclaimers and scoped prompts, aligned with responsible AI principles.</li>
+            <li>Memory-aware dialogue flow that maintains context across turns to produce more coherent health guidance.</li>
+            <li>Serve-as-a-blueprint for lightweight, auditable health chatbots that can be extended with verification or RAG.</li>
+        </ul>
+    </div>
+    <div class="project-results">
+        <h4>Technical Implementation:</h4>
+        <ul>
+            <li>Single-page Streamlit UI with structured symptom input, expandable sections, and chat-style history.</li>
+            <li>Integration with Google's Gemini API using google-generativeai and secure key management via .env.</li>
+            <li>Clear project layout with minimal dependencies for fast deployment on Streamlit Cloud or similar platforms.</li>
+            <li>Conversation reset, session state handling, and formatted markdown responses for improved user experience.</li>
+            <li>Open-source implementation under MIT license for reuse in teaching, demos, and further research.</li>
+        </ul>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/sneha205985/Health_Bot_Chat_Assistant" class="project-link">View Code</a>
+        <a href="https://github.com/sneha205985/Health_Bot_Chat_Assistant/blob/main/README.md" class="project-link">Documentation</a>
+        <a href="https://healthbot-chat-assistant-tg.streamlit.app" target="_blank" class="project-link">Live Demo</a>
+    </div>
+</div>
+
+<div class="project featured">
+    <div class="project-header">
+        <h3>Titanic Survival Prediction Model</h3>
+        <span class="project-status">Project Complete</span>
+    </div>
+    <div class="project-meta">
+        <span class="project-tech">Python • Scikit-learn • Feature Engineering • Binary Classification • Kaggle Titanic Dataset</span>
+        <span class="project-date">2024</span>
+    </div>
+    <p class="project-description">
+        A classical machine learning pipeline that predicts passenger survival on the Titanic using engineered demographic and ticket-related features. The project demonstrates end-to-end supervised learning—from data preprocessing to model training, evaluation, and batch prediction—on a well-known benchmark dataset.
+    </p>
+    <div class="project-features">
+        <h4>Research Contributions:</h4>
+        <ul>
+            <li>Exploration of tabular feature engineering (titles, family size, deck, ticket prefixes) to improve predictive power.</li>
+            <li>Comparative study of Logistic Regression vs Random Forest, highlighting trade-offs between interpretability and accuracy.</li>
+            <li>Cross-validated evaluation with typical performance of ~80–85% accuracy and ~0.85–0.90 ROC AUC.</li>
+            <li>Design of a reusable prediction pipeline for batch inference on new passenger manifests.</li>
+            <li>Clean example of how to structure a small ML project for teaching and portfolio demonstration.</li>
+        </ul>
+    </div>
+    <div class="project-results">
+        <h4>Technical Implementation:</h4>
+        <ul>
+            <li>Modular src/ scripts for feature engineering (features.py), training (train.py), and prediction (predict.py).</li>
+            <li>Command-line interface for training with custom CSVs, test splits, and model output paths.</li>
+            <li>Model persistence using Joblib, enabling fast loading and deployment of the best-performing model.</li>
+            <li>Input/output CSV specification with additional Survival_Prob and Survival_Pred columns for downstream use.</li>
+            <li>Lightweight dependency stack (NumPy, pandas, scikit-learn) suitable for quick experimentation on any machine.</li>
+        </ul>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/sneha205985/Titanic_Survival" class="project-link">View Code</a>
+        <a href="https://github.com/sneha205985/Titanic_Survival/blob/main/README.md" class="project-link">Documentation</a>
+    </div>
+</div>
+
+<div class="project featured">
+    <div class="project-header">
+        <h3>Typing Speed Test Application</h3>
+        <span class="project-status">Project Complete</span>
+    </div>
+    <div class="project-meta">
+        <span class="project-tech">Python • Tkinter GUI • HCI • Educational Tool</span>
+        <span class="project-date">2024</span>
+    </div>
+    <p class="project-description">
+        A desktop application that trains and evaluates users' typing speed and accuracy through staged practice with sentences and paragraphs. The tool offers multiple difficulty paths, real-time feedback, and progress tracking, turning typing practice into a structured, data-driven learning experience.
+    </p>
+    <div class="project-features">
+        <h4>Research Contributions:</h4>
+        <ul>
+            <li>Multi-stage training design with short sentences, long sentences, paragraphs, and timed tests to gradually increase difficulty.</li>
+            <li>Flexible user journey that supports different starting points (sentences vs paragraphs) while explaining the full stage structure.</li>
+            <li>Rich feedback on words per minute, accuracy, and progress, helping users monitor improvement over time.</li>
+            <li>Carefully designed interaction logic that encourages correction of mistakes without enforcing perfection.</li>
+            <li>Practical example of a small-scale HCI/education tool showcasing interface design and user-centric logic.</li>
+        </ul>
+    </div>
+    <div class="project-results">
+        <h4>Technical Implementation:</h4>
+        <ul>
+            <li>Tkinter-based GUI with custom dialogs for mode selection, stage explanation, and result pop-ups.</li>
+            <li>Real-time color-coded feedback (green/red) as users type, plus timers for timed paragraphs.</li>
+            <li>Progress tracker displayed on the interface, including stage and sentence counters.</li>
+            <li>Protection against copy-paste and right-click to ensure genuine typing practice.</li>
+            <li>Text resources organised in external files (sentences.txt, long_sentences.txt, paragraphs.txt) for easy extension.</li>
+        </ul>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/sneha205985/Typing_Speed_Test" class="project-link">View Code</a>
+        <a href="https://github.com/sneha205985/Typing_Speed_Test/blob/main/README.md" class="project-link">Documentation</a>
+    </div>
+</div>
+
+---
+
+*Interested in collaborating on any of these projects? [Get in touch](mailto:snehaguptta005@gmail.com) to discuss potential partnerships or research opportunities.*
+
+<style>
+.project {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project.featured {
+    border-left: 4px solid #000;
+    background: #fafafa;
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-header h3 {
+    color: #000;
+    margin: 0;
+    font-size: 1.4rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.project-status {
+    background: #000;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-tech {
+    color: #666;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.9rem;
+}
+
+.project-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.project-description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.project-features, .project-results {
+    margin-bottom: 1.5rem;
+}
+
+.project-features h4, .project-results h4 {
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.project-features ul, .project-results ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-features li, .project-results li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #333;
+}
+
+.project-features li:before, .project-results li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.project-link:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .project-header h3 {
+        min-width: auto;
+    }
+    
+    .project-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+</style>

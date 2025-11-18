@@ -1,0 +1,188 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+# Publications
+
+Peer-reviewed research papers and preprints in Safe Reinforcement Learning, Human-Robot Interaction, and Optimization-Based Control.
+
+## Featured Publications
+
+<div class="publication featured">
+    <div class="pub-header">
+        <h3>Safe Reinforcement Learning for Human-Robot Shared Control</h3>
+        <span class="pub-status">Preprint • 2025 (Under Review at IEEE RA-L)</span>
+    </div>
+    <p class="pub-authors">Sneha Gupta, Sachin Gupta</p>
+    <p class="pub-abstract">
+        Human-robot shared control is increasingly deployed in safety-critical applications such as exoskeletons, smart wheelchairs, and collaborative robotic arms. While classical controllers provide stable performance under structured models and reinforcement learning (RL) enables adaptation in uncertain environments, both approaches face limitations when safety must be guaranteed in real time. This paper presents a unified framework for Safe Reinforcement Learning (Safe RL) in shared control, combining constrained Markov decision processes (CMDPs) with a real-time Control Barrier Function (CBF)-Quadratic Program (QP) shield. The framework integrates human intent inference, adaptive arbitration between human and robot actions, and rigorous constraint enforcement. We evaluate the method in three representative tasks-wheelchair navigation, exoskeleton sit-to-stand assistance, and collaborative manipulator handovers-across simulation and hardware platforms. Results, aggregated over n = 15 participants and S = 5 seeds, demonstrate an order-of-magnitude reduction in violation rates compared to unconstrained baselines, while sustaining high task success, reduced human workload, and improved trust ratings. Stress tests confirm robustness to sensor noise, intent delays, and sim-to-real transfer. By coupling Safe RL with formal safety filters and user-centered evaluation, this work advances the state of the art in trustworthy human-robot shared autonomy and provides reproducible benchmarks for future research.
+    </p>
+    <div class="pub-links">
+        <a href="https://www.techrxiv.org/users/993341/articles/1354958-safe-reinforcement-learning-for-human-robot-shared-control" class="pub-link">Paper</a>
+        <a href="https://github.com/sneha205985/Safe_Reinforcement_Learning_for_Human_Robot_Shared_Control" class="pub-link">Code</a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=jLGfOyoAAAAJ&gmla=AKzYXQ0qSF6-bXSQcncCCMSIMbfVQBJbdroH4a0hM0aZRcls2F2yNKF7N8iaIO4m9wjvIC5yLC8VmVVM4a2p_bxxykd1cfr4NycP3xGGyQYR0nOHSvwxVGIjVg" class="pub-link">Google Scholar</a>
+    </div>
+    <div class="pub-tags">
+        <span class="pub-tag">Safe Reinforcement Learning</span>
+        <span class="pub-tag">Human–Robot Shared Control</span>
+        <span class="pub-tag">Control Barrier Functions</span>
+        <span class="pub-tag">Runtime Assurance for Robotics</span>
+        <span class="pub-tag">Assistive Human–Robot Interaction</span>
+    </div>
+</div>
+
+## Manuscripts in Preparation
+
+<div class="manuscripts-section">
+    <div class="manuscript-item">
+        <strong>Constrained Policy Optimization for Safe Robotic Learning: A Theoretical Framework</strong><br>
+        <span class="manuscript-target">Target: IEEE Transactions on Robotics</span>
+    </div>
+</div>
+
+---
+
+*For collaboration inquiries or early access to preprints, please <a href="mailto:snehaguptta005@gmail.com">contact me</a>.*
+
+<style>
+.publication {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.publication.featured {
+    border-left: 4px solid #000;
+    background: #fafafa;
+}
+
+.publication:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pub-header h3 {
+    color: #000;
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    flex: 1;
+    min-width: 300px;
+}
+
+.pub-status {
+    background: #000;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pub-authors {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.pub-abstract {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.pub-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.pub-link:hover {
+    background: #333;
+}
+
+.pub-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pub-tag {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.manuscripts-section {
+    background: #fff8e1;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid #ffd54f;
+}
+
+.manuscript-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ffe082;
+}
+
+.manuscript-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.manuscript-item strong {
+    color: #000;
+}
+
+.manuscript-target {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .pub-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .pub-header h3 {
+        min-width: auto;
+    }
+    
+    .pub-status {
+        align-self: flex-start;
+    }
+}
+</style>

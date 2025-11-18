@@ -1,0 +1,172 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%    The MIT License (MIT)
+%    Copyright ...
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}     
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\usepackage{titlesec}                
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\begin{document}
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+% TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Sneha Gupta} \\[7.5pt]
+\href{https://github.com/sneha205985}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://www.linkedin.com/in/sneha-gupta34/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
+\href{mailto:snehaguptta005@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ snehaguptta005@gmail.com} \ $|$ \ 
+\raisebox{-0.05\height}\faMobile \ +91 9873363278\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+Aspiring researcher in Artificial Intelligence and Human–Robot Interaction with hands-on experience in Safe Reinforcement Learning, predictive intent modelling, and multimodal AI systems. Author of a TechRxiv preprint presenting a unified Safe RL framework for shared-control robotics, with an additional theoretical contribution underway on dual-stability and PAC-style safety guarantees in Constrained Policy Optimization. Skilled in developing simulation-driven RL environments, MPC-based control, cybersecurity-aware intelligent systems, and real-world applications including AI-driven health assistants. Motivated to pursue PhD-level research in safe autonomous systems, human-aware control, and trustworthy AI.
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{joblong}{Junior Research Assistant, Maharaja Agrasen Institute of Technology (GGSIPU)}{Mar 2024 -- Present}
+\item Assisting in AI, Machine Learning, and Robotics research projects focused on safe autonomous systems and human–robot interaction.
+\item Developing simulation environments and ML pipelines for RL and control-based experiments with reproducible code and evaluations.
+\item Supporting literature reviews, manuscript preparation, and lab demonstrations for student and faculty research projects.
+\end{joblong}
+
+\begin{joblong}{Frontend Developer, Tendr (Startup)}{Jul 2025 -- Present}
+\item Developed interactive, responsive UI components using HTML, CSS, JavaScript, and modern frontend practices.
+\item Collaborated with design and backend teams to deliver seamless digital experiences.
+\item Ensured cross-browser compatibility, responsive design, and performance improvements.
+\item Worked in an agile environment contributing to debugging, new features, and rapid iteration cycles.
+\end{joblong}
+
+\begin{joblong}{Data Analyst, Cognifyz Technologies}{Aug 2025 -- Sep 2025}
+\item Performed data cleaning, preprocessing, and transformation using Python and Pandas.
+\item Conducted EDA and created trend reports identifying business performance patterns.
+\item Built interactive dashboards using Power BI to support insight-driven decisions.
+\item Improved analytical workflows in collaboration with mentors.
+\end{joblong}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Safe Reinforcement Learning for Human–Robot Shared Control} & \hfill \href{https://github.com/sneha205985/Safe_Reinforcement_Learning_for_Human_Robot_Shared_Control}{GitHub Link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{A state-of-the-art benchmarking framework evaluating Safe RL algorithms in human–robot shared control. Includes SAC-Lagrangian, TD3-Constrained, TRPO/PPO-Lagrangian, RCPO, and classical baselines (MPC, LQR). Features cross-domain evaluations, human behaviour models, safety metrics, and publication-quality visualizations.} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{HealthBot Chat Assistant} & \hfill \href{https://github.com/sneha205985/Health_Bot_Chat_Assistant}{GitHub Link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{AI-powered health assistant built using Streamlit and Google Gemini Pro for symptom analysis and structured medical responses. Supports conversational memory, safe-response protocols, remedies, risk factors, and doctor-advice prompts with a clean, interactive UI. Live App: \href{https://healthbot-chat-assistant-tg.streamlit.app/}{HealthBot}.} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Model-Based RL for Predictive Human Intent Recognition} & \hfill \href{https://github.com/sneha205985/Model_Based_RL_for_Predictive_Human_Intent_Recognition}{GitHub Link} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Developed a modular framework integrating human-behaviour modelling, Bayesian intent prediction, MPC, and Bayesian RL for anticipatory human–robot interaction. Predicts gestures, trajectories, and motion intent under uncertainty with full experiment pipeline and visualization tools.} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+2022 -- Present & \textbf{B.Tech in Information Technology}, Maharaja Agrasen Institute of Technology (GGSIPU), Delhi \\
+                & Relevant Coursework: Data Structures \& Algorithms, OOP, DBMS, Operating Systems, Computer Networks, AI, ML, Cloud Computing. \\[8pt]
+
+2022 & \textbf{Senior Secondary Education (Class 12), CBSE}, DAV Public School, Shrestha Vihar \hfill Percentage: 84\% \\[8pt]
+
+2020 & \textbf{Secondary Education (Class 10), CBSE}, DAV Public School, Shrestha Vihar \hfill Percentage: 90\% \\
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+\begin{enumerate}[leftmargin=*]
+
+\item Sneha Gupta. \textit{Safe Reinforcement Learning for Human-Robot Shared Control}. TechRxiv Preprint, 2025. \href{https://doi.org/10.36227/techrxiv.176231756.64573080/v1}{\textbf{DOI}}(Under journal review).  
+\begin{itemize}
+\item \textbf{Methodological novelty:} Introduces the first unified benchmarking framework for Safe RL in shared-control robotics, featuring a real-time CBF--QP shield and evaluating safety, performance, and human factors under realistic conditions, with validated sim-to-real transfer.
+\end{itemize}
+
+\item Sneha Gupta. \textit{Constrained Policy Optimization for Safe Robotic Learning: A Theoretical Framework}. (Manuscript in Progress)  
+\begin{itemize}
+\item \textbf{Methodological novelty:} Provides theoretical stability guarantees for CPO by establishing boundedness of dual multipliers and introduces the first PAC-style probabilistic safety bounds for constraint satisfaction under uncertainty.
+\end{itemize}
+
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+Programming \& Frameworks & Python (NumPy, Pandas, Scikit-Learn, PyTorch), Java, C++, JavaScript, HTML/CSS, React.js, Node.js, Streamlit, MATLAB, SQL (PostgreSQL, MySQL), Git/GitHub \\[6pt]
+
+Machine Learning \& AI & Safe RL (CPO, PPO-Lagrangian, TD3-Constrained), Bayesian RL, Human-Robot Interaction Models, Intent Prediction, NLP , Anomaly Detection, Model Evaluation \& Optimization \\[6pt]
+
+Robotics \& Control & Model Predictive Control (MPC), Control Barrier Functions (CBF-QP), Safety-Constrained Learning, Human Behaviour Modelling, Motion Planning under Uncertainty, Shared-Control Systems \\[6pt]
+
+Data \& Analytics Tools & Power BI, Tableau, Advanced Excel, EDA, Feature Engineering, Statistical Analysis, Visualization (Matplotlib, Seaborn) \\[6pt]
+
+Cloud \& Deployment & Google Cloud (Gemini API), AWS (Basics), Firebase, API Integration, Streamlit Deployment, Environment Configuration \\[6pt]
+
+Cybersecurity Foundations & Secure System Design, Anomaly Detection Models, Cisco Packet Tracer, Cybersecurity Protocols, Risk Mitigation \\[6pt]
+
+Soft Skills & Problem-Solving, Research \& Analysis, Team Collaboration, Adaptability, Communication, Critical Thinking, Presentation Skills
+
+\end{tabularx}
+
+
+\end{document}
